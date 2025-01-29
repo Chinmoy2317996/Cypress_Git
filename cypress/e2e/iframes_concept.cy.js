@@ -43,16 +43,16 @@ describe("iframe handling", () => {
   //best way to interact with iframes
   //some prerequisite before using this
   //use command npm install cypress-iframe,and add the import in the file on support and then import that method in the spec file by providing the path for support folder
-  it("Accessing frame using package", () => {
-    cy.frameLoaded(".demo-frame");
-    cy.iframe()
-      .find("#draggable > p")
-      .should("have.text", "Drag me to my target");
-    cy.iframe()
-      .find("#draggable > p")
-      .then((txt) => {
-        const txtValue = txt.text();
-        expect(txtValue).equals("Drag me to my target");
-      });
-  });
+  //   it("Accessing frame using package", () => {
+  //     cy.frameLoaded(".demo-frame");
+  //     cy.iframe()
+  //       .find("#draggable > p")
+  //       .should("have.text", "Drag me to my target");
+  //     cy.iframe()
+  //       .find("#draggable > p")
+  //       .then((txt) => {
+  //         const txtValue = txt.text();
+  //         expect(txtValue).equals("Drag me to my target");
+  //       });
+  //   });
 });

@@ -1,5 +1,3 @@
-yml file content:
-
 name: End-to-end tests
 on: push
 jobs:
